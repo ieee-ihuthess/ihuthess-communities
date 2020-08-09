@@ -1,0 +1,11 @@
+html,
+body {
+  background-color: white;
+}
+
+button a:visited,
+button a {
+  color: white;
+  text-decoration: none;
+}
+

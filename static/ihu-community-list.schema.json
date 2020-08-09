@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "communities": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string"
+                },
+                "el": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "en"
+              ]
+            },
+            "description": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string"
+                },
+                "el": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "en"
+              ]
+            },
+            "logo": {
+              "type": "string"
+            },
+            "mainContactEmail": {
+              "type": "string"
+            },
+            "webPage": {
+              "type": "string"
+            },
+            "contactInformation": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "superType": {
+                      "type": "string",
+                      "enum": ["socialMedia", "mail", "IRC", "chat", "rss"]
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "isPublic": {
+                      "type": "boolean"
+                    },
+                    "requiresInvitation": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "name",
+                    "url"
+                  ]
+                }
+              ]
+            },
+            "mainCategory": {
+              "type": "string"
+            },
+            "tags": {
+              "type": "array",
+              "items": {}
+            },
+            "eventListUrl": {
+              "type": "string"
+            },
+            "location": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "map": {
+                  "type": "object",
+                  "properties": {
+                    "latitude": {
+                      "type": "string"
+                    },
+                    "longitude": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "latitude",
+                    "longitude"
+                  ]
+                }
+              },
+              "required": [
+                "name",
+                "country",
+                "city"
+              ]
+            },
+            "parentOrganization": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "url"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "mainContactEmail",
+            "mainCategory"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "communities"
+  ]
+}
