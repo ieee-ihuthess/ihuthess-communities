@@ -23,7 +23,7 @@ export default function Home() {
         </button>
         &nbsp;
         <button className="button-primary"> 
-          <a href="/ihu-community-list.json" target="_blank">Get data schema</a> 
+          <a href="/ihu-community-list.schema.json" target="_blank">Get data schema</a>
         </button>
         
         <h4> Who is in this list </h4>
