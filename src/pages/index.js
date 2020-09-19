@@ -2,6 +2,7 @@ import React from "react";
 import "./../style/normalize.css";
 import "./../style/skeleton.css";
 import "./../style/custom.css";
+import { withPrefix } from 'gatsby';
 
 export default function Home() {
   return (
@@ -19,11 +20,11 @@ export default function Home() {
         
         <h4> Use </h4>
         <button className="button-primary"> 
-          <a href="/ihu-community-list.json" target="_blank">Get data as json</a> 
+          <a href={withPrefix("/ihu-community-list.json")} target="_blank" rel="noreferrer">Get data as json</a> 
         </button>
         &nbsp;
         <button className="button-primary"> 
-          <a href="/ihu-community-list.schema.json" target="_blank">Get data schema</a>
+          <a href={withPrefix("/ihu-community-list.json")} target="_blank" rel="noreferrer">Get data schema</a> 
         </button>
         
         <h4> Who is in this list </h4>
