@@ -9,3 +9,12 @@ button a {
   text-decoration: none;
 }
 
+button.button-ieee {
+  background-color: #00629B;
+  transition: .2s ease-out;
+}
+
+button.button-ieee:hover {
+  background-color: #0091e6;
+}
+
