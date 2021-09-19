@@ -19,12 +19,12 @@ export default function Home() {
         </p>
         
         <h4> Use </h4>
-        <button className="button-primary"> 
+        <button className="button-primary button-ieee"> 
           <a href={withPrefix("/ihu-community-list.json")} target="_blank" rel="noreferrer">Get data as json</a> 
         </button>
         &nbsp;
-        <button className="button-primary"> 
-          <a href={withPrefix("/ihu-community-list.json")} target="_blank" rel="noreferrer">Get data schema</a> 
+        <button className="button-primary button-ieee"> 
+          <a href={withPrefix("/ihu-community-list.schema.json")} target="_blank" rel="noreferrer">Get data schema</a> 
         </button>
         
         <h4> Who is in this list </h4>
@@ -37,12 +37,11 @@ export default function Home() {
         <p>
           We are grateful that you want to be included in this list!
           The point is to know that the community wants to be included and find it's information. We propose the following actions:
-
-          <ul>
-            <li> If you want to include your community, open a PR that includes your communities information </li>
-            <li> If you know of a community that should be included, open an issue and ask the inclusion of the community </li>
-          </ul>
         </p>
+        <ul>
+          <li> If you want to include your community, open a PR that includes your communities information </li>
+          <li> If you know of a community that should be included, open an issue and ask the inclusion of the community </li>
+        </ul>
 
         <h4> How to exclude a community from the list </h4>
         <p>
