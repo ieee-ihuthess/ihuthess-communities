@@ -4,6 +4,8 @@ body {
 }
 
 button a:visited,
+button a:hover,
+a:hover,
 button a {
   color: white;
   text-decoration: none;
